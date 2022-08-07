@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 736px;
+  height: 19px;
+  margin-bottom: 24px;
+}
+
+.header .created,
+.header .done {
+  display: flex;
+  align-items: center;
+}
+
+.header .created p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 8px;
+
+  color: #4ea8de;
+}
+
+.header .created span,
+.header .done span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+  height: 19px;
+  background: #333333;
+  border-radius: 999px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #d9d9d9;
+}
+
+.header .done p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 8px;
+  color: #8284fa;
+}
