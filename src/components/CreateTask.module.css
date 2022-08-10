@@ -6,17 +6,21 @@
   margin-bottom: 64px;
 }
 
-.div input {
+.div .input {
   padding: 16px;
   width: 39.875rem;
   padding: 16px;
-  background: #262626;
+  background: var(--gray-500);
   border: 1px solid #0d0d0d;
   border-radius: 8px;
 
   font-size: 16px;
-  line-height: 140%;
-  color: #808080;
+  line-height: var(--line-height-140);
+  color: var(--gray-100);
+}
+
+.div .input:focus-within {
+  border: 1px solid var(--purple-dark);
 }
 
 .div button {
@@ -26,10 +30,14 @@
   gap: 8px;
   width: 5.625rem;
   height: 3.25rem;
-  background: #1e6f9f;
+  background: var(--blue-dark);
   border-radius: 8px;
-  font-weight: 700;
+  font-weight: var(--font-weigh-700);
   font-size: 14px;
-  line-height: 140%;
-  color: #f2f2f2;
+  line-height: var(--line-height-140);
+  color: var(--gray-100);
+}
+
+.div button:hover {
+  background: var(--blue);
 }

@@ -14,13 +14,12 @@ type TaskProps = {
 export default function Task({ completeTask, deleteTask, task }: TaskProps) {
   return (
     <div className={styles.div}>
-      <button onClick={() => completeTask(task.id)}>
-        <img src={task.done ? check : uncheck} />
-      </button>
+      <div
+        onClick={() => completeTask(task.id)}
+        className={task.done ? styles.checked : styles.unchecked}
+      />
       <p className={task.done ? styles.trashed : ""}>{task.content}</p>
-      <button onClick={() => deleteTask(task.id)}>
-        <img src={trash} />
-      </button>
+      <div onClick={() => deleteTask(task.id)} className={styles.trash} />
     </div>
   );
 }

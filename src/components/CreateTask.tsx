@@ -24,6 +24,7 @@ export function CreateTask({ setTasks, tasks }: CreateTaskProps) {
   return (
     <div className={styles.div}>
       <input
+        className={styles.input}
         placeholder="Adicione uma nova tarefa"
         onChange={(e) => setContent(e.target.value)}
         value={content}

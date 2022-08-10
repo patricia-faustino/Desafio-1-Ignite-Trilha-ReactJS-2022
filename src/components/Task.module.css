@@ -5,15 +5,14 @@
   padding: 16px;
   gap: 12px;
   width: 736px;
-  background: #262626;
-  border: 1px solid #333333;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   margin-bottom: 12px;
   font-size: 14px;
-  line-height: 140%;
-  color: #f2f2f2;
-  text-align: center;
+  line-height: var(line-height-140);
+  color: var(--gray-100);
 }
 
 .div:last-child {
@@ -28,7 +27,42 @@
   background: transparent;
 }
 
+.div  p {
+  width: 632px;
+}
+
 .div .trashed {
   text-decoration: line-through;
-  color: #808080;
+  color: var(--gray-100);
+}
+
+.div .unchecked {
+  background-image: url("../assets/uncheck.svg");
+  height: 18px;
+  width: 18px;
+}
+
+.div .checked {
+  background-image: url("../assets/check.svg");
+  height: 18px;
+  width: 18px;
+}
+
+.div .unchecked:hover { 
+  background-image: url("../assets/uncheck-hover.svg");
+}
+
+.div .checked:hover {
+  background-image: url("../assets/check-hover.svg");
+}
+
+
+.div .trash {
+  background-image: url("../assets/trash.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.div .trash:hover {
+  background-image: url("../assets/trash-hover.svg");
 }
